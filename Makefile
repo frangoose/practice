@@ -25,5 +25,11 @@ binarysearch: binarysearch.o
 binarysearch.o: binarysearch.c
 	$(CC) $(CFLAGS) binarysearch.c
 
+linkedlist: linkedlist.o
+	$(CC) linkedlist.o -o linkedlist
+
+linkedlist.o: linkedlist.c
+	$(CC) $(CFLAGS) linkedlist.c
+
 clean:
 	rm -f *.o
