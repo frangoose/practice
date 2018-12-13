@@ -31,5 +31,10 @@ linkedlist: linkedlist.o
 linkedlist.o: linkedlist.c
 	$(CC) $(CFLAGS) linkedlist.c
 
+rev_string: rev_string.o
+	$(CC) rev_string.o -o rev_string
+
+re_string.o: rev_string.c
+	$(CC) $(CFLAGS) rev_string.c
 clean:
 	rm -f *.o
