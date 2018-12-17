@@ -36,5 +36,11 @@ rev_string: rev_string.o
 
 re_string.o: rev_string.c
 	$(CC) $(CFLAGS) rev_string.c
+
+cntsetbits: cntsetbits.o
+	$(CC) cntsetbits.o -o cntsetbits
+
+cntsetbits.o: cntsetbits.c
+	$(CC) $(CFLAGS) cntsetbits.c
 clean:
 	rm -f *.o
